@@ -1,18 +1,18 @@
 def main():
-    def exchanges(spis):
+    def exchanges(list):
         
-        if  len(spis) == 0:
+        if  len(list) == 0:
             return [[]]
-        all_exchanges = []
+        exch = []
         
         for i in range(len(spis)): 
-            numb_one = spis[i]
-            remaning = spis[:i] + spis[i + 1:]
+            numb = list[i]
+            remaning = list[:i] + list[i + 1:]
             exchanges_remain = exchanges(remaning)
             
             for z in exchanges_remain:
-                all_exchanges.append([numb_one] + z)
-        return all_exchanges
+                exch.append([numn] + z)
+        return exch
         
     for i in exchanges([1, 2, 3]):
         print(i)
