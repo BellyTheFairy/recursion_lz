@@ -6,6 +6,9 @@ def pascal_triangle(n):
     new_row = [1] + [last_row[i - 1] + last_row[i] for i in range(1, len(last_row))] + [1] 
     return triangle + [new_row]  
 
-first = int(input('Введите сколько строчек треугольника Паскаля вывести:'))
+def main(n)
+    n = int(input('Введите сколько строчек треугольника Паскаля вывести:'))
+    print(pascal_triangle(n))
 
-print(pascal_triangle(first))
+if _name_ == '_main_':
+    main()
