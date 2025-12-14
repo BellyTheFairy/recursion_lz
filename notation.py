@@ -1,6 +1,3 @@
-base = int(input('Введите основание системы счисления: '))
-num = int(input('Введите число: '))
-
 def notation(N: int, T: int) -> str:
     if N == 0:
         return '0'
@@ -14,5 +11,11 @@ def notation(N: int, T: int) -> str:
     return digit
 
 
+def main(N, T):
+    base = int(input('Введите основание системы счисления: '))
+    num = int(input('Введите число: '))
+    N = notation(N, T)
+    print(f'Число {num} в системе счисления с основанием {base}: {notation(num, base)}')
 
-print(f'Число {num} в системе счисления с основанием {base}: {notation(num, base)}')
+if _name_ == '_main_':
+    main()
