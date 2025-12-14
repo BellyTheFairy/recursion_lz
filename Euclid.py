@@ -11,10 +11,13 @@ def GCD(a,b):
         
 print('Введите два числа, для нахождения их НОД')
 
-inpt=input()
-inpt=inpt.split()
-a=int(inpt[0])
-b=int(inpt[1])
-a_answer=a
-b_answer=b
-d=GCD(a,b)
+def main(a,b):
+    inpt=input()
+    inpt=inpt.split()
+    a=int(inpt[0])
+    b=int(inpt[1])
+    a_answer=a
+    b_answer=b
+    d=GCD(a,b)
+    
+if _name_ == '_main_':
